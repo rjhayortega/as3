@@ -36,6 +36,16 @@
             
         <script type="text/javascript" src="swfobject.js"></script>
         <script type="text/javascript">
+
+
+            function sendTextToAS3(Txt){
+
+                var flash = document.getElementById("test");
+                flash.sendTextFromJS(Txt);
+               
+            }
+
+
             // For version detection, set to min. required Flash Player version, or 0 (or 0.0.0), for no version detection. 
             var swfVersionStr = "11.1.0";
             // To use express install, set to playerProductInstall.swf, otherwise the empty string. 
@@ -60,6 +70,7 @@
         </script>
     </head>
     <body>
+    <input type="button" value="ASD" onclick="sendTextToAS3('asd')">
         <!-- SWFObject's dynamic embed method replaces this alternative HTML content with Flash content when enough 
              JavaScript and Flash plug-in support is available. The div is initially hidden so that it doesn't show
              when JavaScript is disabled.
